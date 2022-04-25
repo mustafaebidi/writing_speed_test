@@ -1,0 +1,23 @@
+.level{
+    text-align: center;
+    border-top: 2px solid white;
+}
+.level.active{
+    pointer-events: none;
+}
+
+.level > div{
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+}
+.level > div.active{
+    background-color: #292a2f;
+
+}
+
+.level > div:hover{
+    background-color: #292a2f;
+    
+    
+}

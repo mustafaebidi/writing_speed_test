@@ -1,0 +1,13 @@
+
+
+.right{
+    background-color: white;
+    flex: 3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px 0px;
+    
+}

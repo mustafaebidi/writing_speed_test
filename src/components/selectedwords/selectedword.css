@@ -1,0 +1,25 @@
+
+
+.main-words{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.main-words > div{
+    color: white;
+    background-color: #5a5e6c;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+    .main-words > div {
+      font-size: 15px;
+    }
+  }
+
+

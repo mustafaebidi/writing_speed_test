@@ -1,0 +1,24 @@
+
+.timer{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.number-time{
+    font-size: 50px;
+}
+
+
+
+@media (max-width: 767px) {
+    .timer{
+        font-size: 15px;
+    }
+
+  }

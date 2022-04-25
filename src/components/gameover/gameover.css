@@ -1,0 +1,17 @@
+.game-over{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.913);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.game-over h1{
+
+    color: #92140C;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 900;
+}

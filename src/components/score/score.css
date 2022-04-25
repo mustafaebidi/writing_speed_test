@@ -1,0 +1,30 @@
+
+.score{
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px 0px;
+    font-size: 17px;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.score > span:first-of-type{
+    color: black;
+    background-color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+@media (max-width: 767px) {
+    .score{
+        font-size: 15px;
+        flex-direction: column;
+    }
+
+  }
