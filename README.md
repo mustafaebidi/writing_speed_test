@@ -1,5 +1,4 @@
 
 # live server
 
-sspeed-tttest.netlify.app
-
+https://sspeed-tttest.netlify.app/
