@@ -1,4 +1,4 @@
-import { Fragment, useRef, useState } from 'react';
+import { Fragment, useState } from 'react';
 
 import Timer from "./components/Timer/timer"
 import Level from "./components/level/Level"
