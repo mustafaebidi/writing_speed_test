@@ -4,4 +4,7 @@
     background-color:#5a5e6c;
     flex: 1;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

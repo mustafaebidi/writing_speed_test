@@ -15,3 +15,14 @@
     text-transform: uppercase;
     font-weight: 900;
 }
+
+@media(max-width:767px){
+    .game-over h1{
+
+        color: #92140C;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+}
