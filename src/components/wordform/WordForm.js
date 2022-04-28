@@ -14,14 +14,21 @@ const WordForm=()=>{
         setWordInTheInput(wordValue.current.value)
     }
 
+    const handleSubmit=(e)=> {
+        e.preventDefault();
+      }
+
     return(
 
     <div className="form">
         <h2>
             {currentWord}
         </h2>
-        <form>
-            <input ref={wordValue} onChange={handleChange} value={wordInTheInput}/>
+        <form onSubmit={handleSubmit}>
+            <input ref={wordValue} onChange={handleChange} value={wordInTheInput} onPaste={(e)=> {
+                e.preventDefault()
+                return false;
+            }}/>
         </form>
     </div>
     )

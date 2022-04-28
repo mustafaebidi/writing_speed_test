@@ -6,7 +6,6 @@ import "./selectedword.css"
 const SelectedWords=()=>{
 
     const {selectedType}=useGlobalContext()
-    console.log(selectedType.allWords)
 
     selectedType.allWords.map((word)=>{
         return(

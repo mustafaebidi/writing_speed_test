@@ -21,7 +21,6 @@ function Timer({level,setChallenge}) {
 
 
     function startTimer(){
-        console.log("ali")
         globalTimer.current=setInterval(() => {
             setTimer((state)=>state-1)
             
