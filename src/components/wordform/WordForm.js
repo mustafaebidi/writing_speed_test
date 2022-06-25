@@ -16,7 +16,7 @@ const WordForm=()=>{
 
     const handleSubmit=(e)=> {
         e.preventDefault();
-      }
+    }
 
     return(
 

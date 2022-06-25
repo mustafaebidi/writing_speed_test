@@ -7,19 +7,11 @@ const SelectedWords=()=>{
 
     const {selectedType}=useGlobalContext()
 
-    selectedType.allWords.map((word)=>{
-        return(
-            <div>{word}</div>
-        )
-    })
-
     
     
-
     return(
         <div className="main-words">
-            {selectedType.allWords && 
-                selectedType.allWords.map((word,idx)=>{
+            {selectedType.allWords?.map((word,idx)=>{
                     return(
                         <div key={idx}>{word}</div>
                     )

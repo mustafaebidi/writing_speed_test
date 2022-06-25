@@ -1,56 +1,55 @@
-import {  useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 
-import {useGlobalContext} from "../../context"
+import { useGlobalContext } from "../../context"
 import "./timer.css"
 
 
 
-function Timer({level,setChallenge}) {
+function Timer({ level, setChallenge }) {
 
-    const {startGame,CheckTheWord}=useGlobalContext()
-
-
-    const speedOfEachLevel =useRef({Hard:3,Normal:5,Easy:7})
+    const { startGame, getNextWord } = useGlobalContext()
 
 
-    const globalTimer=useRef()
-
-    const [timer,setTimer]=useState(5)
+    const speedOfEachLevel = useRef({ Hard: 3, Normal: 5, Easy: 7 })
 
 
+    const globalTimer = useRef()
 
-    function startTimer(){
-        globalTimer.current=setInterval(() => {
-            setTimer((state)=>state-1)
-            
+    const [timer, setTimer] = useState(5)
+
+
+
+    function startTimer() {
+        globalTimer.current = setInterval(() => {
+            setTimer((state) => state - 1)
         }, 1000);
 
     }
 
-    useEffect(()=>{
-        if(startGame){
+    useEffect(() => {
+        if (startGame) {
             startTimer()
         }
-    },[startGame])
+    }, [startGame])
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        if(timer < 1){
+        if (timer < 1) {
 
             clearInterval(globalTimer.current)
             setTimer(speedOfEachLevel.current[level])
-            CheckTheWord(startTimer,setChallenge)
+            getNextWord(startTimer, setChallenge)
         }
 
-    },[timer, CheckTheWord, setChallenge, level])
+    }, [timer, getNextWord, setChallenge, level])
 
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        setTimer((timer)=>speedOfEachLevel.current[level])
+        setTimer((timer) => speedOfEachLevel.current[level])
 
-    },[level])
+    }, [level])
 
 
     return (
